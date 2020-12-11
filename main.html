@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>  </head>
+
+<body>
+<div id=formulario>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+
+Nome Pessoa: <input type="text" class="form-control" for="validationDefault01" placeholder="Adebaldo Silva" name="fnomepessoa" required />
+Nome Carteira: <input type="text" class="form-control" placeholder="Carteira 1" name="fnomecarteira" required />
+Data Inicial: <input type="date" class="form-control" name="fdatainicial" required />
+Data Final: <input type="date" class="form-control" name="fdatafinal" required />
+Quantidade de Acoes: <input type="numeric" class="form-control" placeholder="1" name="fqtdacoes" id = "qtd" required />
+Peso 1: <input type="numeric" class="form-control" name="fpeso" placeholder="1" required />
+<p></p>
+Frequencia do Rebalanceamento (Em dias): <input type="numeric" placeholder="0" name="ffreqrebal" />
+
+<button type="submit" class="btn btn-primary" value="Submit" >Enviar formulário</button>
+</form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" charset="UTF-8" src="validacaoForm.js" ></script>
+<script type="text/javascript" charset="UTF-8" src="conectarBanco.js" ></script>
+<link rel="stylesheet" href="layout.css">
+<link type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</body>
+</html>
