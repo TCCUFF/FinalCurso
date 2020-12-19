@@ -1,0 +1,36 @@
+{
+  "name": "tcc",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "conectarBanco.js",
+  "dependencies": {
+    "-": "0.0.1",
+    "consolidate": "^0.16.0",
+    "cors": "^2.8.5",
+    "dustjs-helpers": "^1.7.4",
+    "express": "^4.17.1",
+    "g": "^2.0.1",
+    "next": "^10.0.3",
+    "pg": "^8.5.1",
+    "postgres": "^1.0.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "dev": "next dev"
+  },
+  "author": "vinicius",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TCCUFF/FinalCurso.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/TCCUFF/FinalCurso/issues"
+  },
+  "homepage": "https://github.com/TCCUFF/FinalCurso#readme"
+}
