@@ -8,6 +8,7 @@ const pool = require("./db");
 app.use(cors());
 app.use (express.json()); //req.body
 
+
 //ROUTES
 
 //create a todo

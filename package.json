@@ -1,31 +1,31 @@
 {
-  "name": "tcc",
-  "version": "1.0.0",
-  "description": "test",
-  "main": "conectarBanco.js",
-  "dependencies": {
-    "consolidate": "^0.16.0",
-    "dustjs-helpers": "^1.7.4",
-    "express": "^4.17.1",
-    "next": "^10.0.3",
-    "pg": "^8.4.2",
-    "postgres": "^1.0.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "dev": "next dev"
-  },
-  "author": "vinicius",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TCCUFF/FinalCurso.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/TCCUFF/FinalCurso/issues"
-  },
-  "homepage": "https://github.com/TCCUFF/FinalCurso#readme"
+    "name": "tcc",
+    "version": "1.0.0",
+    "description": "test",
+    "main": "conectarBanco.js",
+    "dependencies": {
+      "consolidate": "^0.16.0",
+      "dustjs-helpers": "^1.7.4",
+      "express": "^4.17.1",
+      "next": "^10.0.3",
+      "pg": "^8.4.2",
+      "postgres": "^1.0.2",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "dev": "next dev"
+    },
+    "author": "vinicius",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/TCCUFF/FinalCurso.git"
+    },
+    "keywords": [],
+    "bugs": {
+      "url": "https://github.com/TCCUFF/FinalCurso/issues"
+    },
+    "homepage": "https://github.com/TCCUFF/FinalCurso#readme"
 }
