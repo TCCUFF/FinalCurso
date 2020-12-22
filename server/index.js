@@ -15,7 +15,8 @@ app.post ("/randoms", async(req, res) => {
     try {
         //console.log(req.body);
         const {description} = req.body;
-        const NewTodo  = await pool.query("Insert INTO Cotacoes(ticker) Values (teste) RETURNING *"
+        const NewTodo  = await pool.query("Insert INTO \"Cotacoes\" (ticker) Values ($1) RETURNING *",
+             [description]
         );
         //(1111,'2021-01-01','TESTANDO','1111')")
         res.json(NewTodo);
