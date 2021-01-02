@@ -1,0 +1,90 @@
+<html>
+  <head>
+	<%= render partial: "bootstrap"%>
+  </head>
+<body>
+
+<%= render partial: "navbar"%>
+
+
+<div class = "container">
+
+<% if flash[:notice] %>
+	<div class="alert alert‐success" role="alert"><%= flash[:notice] %></div>
+<% end %>
+ 
+
+</div>
+</div>
+<div class = "container">
+<div class = "container ">
+
+
+</div>
+<table class = "table table-bordered">
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Preço</th>
+			<th>Quantidade</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+
+		<%= render partial: "produto", collection: @produto_por_nome%>
+	</tbody>
+</table>
+<br/>
+
+<table class = "table table-bordered">
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Descrição</th>
+			<th>Preço</th>
+			<th>Quantidade</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<%= render partial: "produto", collection: @produto_por_preco%>
+	</tbody>
+</table>
+<br/>
+<div class = "container ">
+
+<div class="row justify-content-center">
+    <div class="col-auto">
+		<table class = "table table-bordered table-responsive">
+			<form method="get" action="/produtos/new">
+				Deseja adicionar novo produto?
+				<button type="buttone" class = "btn btn-success">Adicionar</button>
+			</form>
+		</table>
+	</div>
+</div>
+
+
+<table class = "table table-bordered">
+	<thead>
+		<tr>
+			<th>Filtro</th>
+		</tr>
+	</thead>
+	
+
+	<tbody>
+		<% @produto_procurado.each do |produto| %>
+		<tr>
+			<td><%= produto.nome %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
+
+
+</body>
+</html>

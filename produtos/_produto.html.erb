@@ -1,0 +1,13 @@
+		<tr>
+			<td><%= produto.nome %></td>
+			<td><%= produto.descricao %></td>
+			<td><%= produto.preco %></td>
+			<td><%= produto.quantidade %></td>
+			<td>
+			<form method="get" action=<%="/produtos/#{produto.id}/remove"%>>
+				<button type="buttone" class = "btn btn-danger">Remover</button> </td>
+			</form>
+            <td><form method="get" action=<%="/produtos/#{produto.id}/edit"%>>
+				<button type="buttone" class = "btn ">Alterar</button> </td>
+			</form></td>
+		</tr>
